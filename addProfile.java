@@ -1,14 +1,15 @@
 package Mininet;
+
 import java.util.*;  
 
- class addPerson {
-    	String name;
+class addPerson {
+   	String name;
 		int age;
 		String status;
 		String image;
 		String friend1;
 		String friend2;
-    	public addPerson(String name,int age, String status, String image, String friend1,String friend2) {  
+   	public addPerson(String name,int age, String status, String image, String friend1,String friend2) {  
 	    this.name = name;  
 	    this.age = age;  
 	    this.status = status;  
@@ -32,6 +33,5 @@ import java.util.*;
 	    System.out.println(b.name+" "+b.age+" "+b.status+" "+b.image+" "+b.friend1+""+b.friend2);  
 	    }  
 	}  
-	}  
-
+}
 
