@@ -1,14 +1,14 @@
 package Mininet;
 
-public class UpdateProfile{
+public class UpdateProfile extends Profile{
      int uAge;
      String uName;
      String uStatus, uImage;
   
-	/*public UpdateProfile(String profileName, String uName, int uAge, String uStatus, String uImage)
+	public UpdateProfile(String profileName)
 	{
     super(profileName);
-	}*/
+	}
 	public void setUname(String updatedName)
 	{
 	    uName= updatedName;
