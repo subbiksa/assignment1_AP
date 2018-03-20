@@ -1,6 +1,8 @@
 package Mininet;
 
-public class Profile {//creation of new class Profile
+import java.util.ArrayList;
+
+public class Profile{//creation of new class Profile(super class)
 
 	 String profileName;//variable declared for each profile
 	 int age;
@@ -8,7 +10,7 @@ public class Profile {//creation of new class Profile
 	 String image;
 	 String friend1;
 	 String friend2;
-	public Profile(String profileName) { //constructor of the class Profile 
+	public Profile(String profileName) { //constructor declaration
 		
 		this.profileName=profileName;
 	}
@@ -32,8 +34,23 @@ public class Profile {//creation of new class Profile
 		System.out.println("Age:"+age);
 		System.out.println("Status:"+status);
 		System.out.println("Image:"+image);
-		System.out.println("List of Friends:"+friend1+"\n"+friend2);
-		
+		System.out.println("List of Friends\n"+friend1+"\n"+friend2);
 	}
-	
+    public void deleteProfile() {
+    	ArrayList<String> lis = new ArrayList<String>(5);
+    	lis.add("Chandler Bing");
+    	lis.add("Joey Tribbiani");
+    	lis.add("Phoebe Buffay");
+    	lis.add("Rachel Greene");
+    	lis.add("Monica Geller");
+    	System.out.println("List of Profiles");
+    	for(String value:lis) {
+    		System.out.println(" "+value);
+    	}
+    	lis.remove(0);
+    	System.out.println("New profile list");
+    	for(String value:lis) {
+    		System.out.println(" "+value);
+    	}
+    }
 }

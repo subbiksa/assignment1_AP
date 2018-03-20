@@ -41,15 +41,10 @@ public abstract class Driver extends Profile {
 		   p6.getImage("harmonica.png");
 		   p6.getfriend1("Chandler Bing");
 		   p6.getFriend2("Joey Tribbiani");
-		   
-		   UpdateProfile up= new UpdateProfile("Chandler Bing");
-		   up.setUname("Chandler Binga"); 
-		   up.setUage(31);
-		   up.setUstatus("Teaching at RMIT");
-		   up.setUimage("chanman.jpeg");
            //addPerson p7=new addPerson("Gunther",40,"Barista-Central Perk","gun.jpg","Ross Geller","Monica Geller");  		
 		   // p1.displayProfile();
 		   addProfile person= new addProfile();
+		   Profile prof=new Profile("Chandler");
 		   System.out.println("MiniNet Menu");
 		   System.out.println("!================!");
 		   System.out.println("1.Add a new profile");
@@ -83,17 +78,12 @@ public abstract class Driver extends Profile {
            case 4:
         	   System.out.println("Friendship connections");
         	   break;
- case 5:
+           case 5:
         	   System.out.println("Update the profile");
-        	   System.out.println("Enter the profile name");
-        	   String pName="Chandler Bing";
-        	   System.out.println(pName);
-        	   //p1.getProfileName("Chandler Bing");
-        	   up.updateProfile();
-        	   System.out.println("Profile is updated");
         	   break;
            case 6:
-        	   System.out.println("Delete the profile");
+        	   System.out.println("Delete the profile!");
+        	   prof.deleteProfile();
         	   break;
            case 7:
         	   System.out.println("Connect profiles");
@@ -104,4 +94,5 @@ public abstract class Driver extends Profile {
         }
 		sc.close();
      	}
-}
+	       public abstract void profile();
+	}
