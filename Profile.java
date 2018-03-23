@@ -1,9 +1,12 @@
- package Mininet;
+package Mininet;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 //author Subbiksa
 public class Profile {//creation of new class Profile
 
+	 Scanner sc = new Scanner(System.in);
+	 String OK;
 	 String name;//variable declared for each profile
 	 int age;
 	 String status;
@@ -56,8 +59,26 @@ public class Profile {//creation of new class Profile
     	System.out.println("New profile list");
     	for(String value:lis) {
     		System.out.println(" "+value);
-}
+    		}
+	}
+    	public void updateProfile(Profile p1) {
+    	   System.out.println("Enter the profile");
+     	   p1.displayProfile();
+     	   System.out.println("Edit profile");
+     	   p1.getName("Chandler Binga");
+ 		   p1.getAge(31); 
+ 		   p1.getStatus("Lecturer atRMIT");
+ 		   p1.getImage("chanman.jpeg");
+ 		   p1.getFriend1("Monica Geller");
+ 		   p1.getFriend2("Joey Tribbiani");
+ 		   System.out.println("Press Enter to update");
+ 		   OK= sc. nextLine();
+ 		   p1.displayProfile();
+
+    	   System.out.println("Profile is updated");
+    	}
+    	
 	}
     	
 
-}
+
