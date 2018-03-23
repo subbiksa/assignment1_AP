@@ -1,7 +1,7 @@
  package Mininet;
 
 import java.util.ArrayList;
-
+//author Subbiksa
 public class Profile {//creation of new class Profile
 
 	 String name;//variable declared for each profile
